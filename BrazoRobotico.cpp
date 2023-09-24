@@ -2,10 +2,10 @@
 #include "BrazoRobotico.h"	
 
 BrazoRobotico::BrazoRobotico(double x, double y, double z, bool sujeta_) {
-	double coorx = x;
-	double coory = y;
-	double coorz = z; 
-	bool sujeta = sujeta_;
+	this-> coorx = x;
+	this->coory = y;
+	this->coorz = z; 
+	this->sujeta = sujeta_;
 }
 double BrazoRobotico::damex(){
 	return coorx;
@@ -16,7 +16,7 @@ double BrazoRobotico::damey(){
 double BrazoRobotico::damez(){
 	return coorz;
 }
-
+bool BrazoRobotico::damesujeta(){
 	return sujeta;
 }
 void BrazoRobotico::coger(){
@@ -25,7 +25,7 @@ void BrazoRobotico::coger(){
 void BrazoRobotico::soltar(){
 	sujeta = false;
 }
-void BrazoRobotico::mover(int X, int Y, int Z){
+void BrazoRobotico::mover(double X, double Y, double Z){
 	coorx = X;
        	coory = Y; 
 	coorz = Z;

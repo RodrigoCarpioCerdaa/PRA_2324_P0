@@ -10,15 +10,13 @@ class BrazoRobotico{
 		bool sujeta;
 
 	public:
-		BrazoRobotico(double coorx, double coory, double coorz, bool sujeta){
-		this->coorx = coorx;
-		this->coory = coory;
-		this->coorz = coorz;
-		this->sujeta = sujeta;
-		}
+		BrazoRobotico(double x, double y, double z, bool sujeta_);
 		double damex();
 		double damey();
 		double damez();
-		double damesujeta();
+		void soltar();
+		bool damesujeta();
 		void coger();
-		
+		void mover(double , double , double );
+	
+};	
