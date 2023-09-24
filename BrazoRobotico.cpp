@@ -7,25 +7,25 @@ BrazoRobotico::BrazoRobotico(double x, double y, double z, bool sujeta_) {
 	double coorz = z; 
 	bool sujeta = sujeta_;
 }
-double damex(){
+double BrazoRobotico::damex(){
 	return coorx;
 }
-double damey(){
+double BrazoRobotico::damey(){
 	return coory;
 }
-double damez(){
+double BrazoRobotico::damez(){
 	return coorz;
 }
-bool  samesujeta(){
+bool  BrazoRobotico::damesujeta(){
 	return sujeta;
 }
-void coger(){
+void BrazoRobotico::coger(){
 	sujeta = true;
 }
-void soltar(){
+void BrazoRobotico::soltar(){
 	sujeta = false;
 }
-void mover(int X, int Y, int Z){
+void BrazoRobotico::mover(int X, int Y, int Z){
 	coorx = X;
        	coory = Y; 
 	coorz = Z;
