@@ -16,7 +16,7 @@ double BrazoRobotico::damey(){
 double BrazoRobotico::damez(){
 	return coorz;
 }
-bool  BrazoRobotico::damesujeta(){
+
 	return sujeta;
 }
 void BrazoRobotico::coger(){

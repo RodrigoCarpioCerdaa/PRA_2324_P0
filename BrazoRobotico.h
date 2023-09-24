@@ -21,4 +21,4 @@ class BrazoRobotico{
 		double damez();
 		double damesujeta();
 		void coger();
-}
+		

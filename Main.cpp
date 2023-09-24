@@ -24,5 +24,5 @@ if (B1.damesujeta == true){
 else{
 	cout << "el robot no ha cogido el objeto" endl;
 }
-
+return 0;
 }
